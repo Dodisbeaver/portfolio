@@ -1,22 +1,36 @@
 <template>
   <div class="container-fluid">
-    <Header/>
-    <div class="container "><Navbar/></div>
+    <div class="container">
+        <HeaderText/>
+    </div>
     
+    <div class="container "><Navbar/></div>
+    <div class="container">
+      <div class="row">
+         <WorkExperience/>
+          <Skills/>
+      </div>
+     
+    </div>
   </div>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Header from './components/Header.vue'
+import HeaderText from './components/HeaderText.vue'
 import Navbar from './components/Navbar.vue'
+import WorkExperience from './components/WorkExperience.vue'
+import Skills from './components/Skills.vue'
+
 export default {
   name: 'App',
   components: {
     // HelloWorld
-    Header,
+    HeaderText,
     Navbar,
+    WorkExperience,
+    Skills,
   }
 }
 </script>
@@ -26,7 +40,6 @@ export default {
   font-family: sans-serif, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }

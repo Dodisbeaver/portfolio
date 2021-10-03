@@ -1,5 +1,5 @@
 <template>
-     <ul class="nav nav-pills justify-content-center">
+     <ul class="nav nav-pills ">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
